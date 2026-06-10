@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>income Mini App</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+padding-bottom:80px;
+}
+
+.header{
+padding:20px;
+background:#1e293b;
+}
+
+.balance{
+background:linear-gradient(135deg,#22c55e,#16a34a);
+padding:15px;
+border-radius:15px;
+font-size:20px;
+font-weight:bold;
+text-align:center;
+}
+
+.section{
+padding:15px;
+}
+
+.title{
+font-size:18px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.categories{
+display:flex;
+gap:10px;
+overflow:auto;
+}
+
+.cat{
+background:#1e293b;
+padding:10px 15px;
+border-radius:10px;
+white-space:nowrap;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.video-card{
+background:#1e293b;
+border-radius:12px;
+overflow:hidden;
+}
+
+.video-thumb{
+height:120px;
+background:#334155;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+}
+
+.video-info{
+padding:10px;
+}
+
+.lock{
+color:#facc15;
+font-size:13px;
+}
+
+.profile{
+background:#1e293b;
+padding:15px;
+border-radius:15px;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#1e293b;
+display:flex;
+justify-content:space-around;
+padding:12px 0;
+}
+
+.nav-btn{
+color:white;
+text-decoration:none;
+font-size:14px;
+text-align:center;
+}
+
+.active{
+color:#22c55e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<div class="balance">
+💰 Balance: ৳120
+</div>
+</div>
+
+<div class="section">
+<div class="title">📂 Categories</div>
+
+<div class="categories">
+<div class="cat">🎮 Gaming</div>
+<div class="cat">🎬 Movies</div>
+<div class="cat">📚 Education</div>
+<div class="cat">⚽ Sports</div>
+</div>
+</div>
+
+<div class="section">
+<div class="title">🎥 Videos</div>
+
+<div class="video-grid">
+
+<div class="video-card">
+<div class="video-thumb">▶️</div>
+<div class="video-info">
+<div>Gaming Tutorial</div>
+<div class="lock">🔒 Watch Ad To Unlock</div>
+</div>
+</div>
+
+<div class="video-card">
+<div class="video-thumb">🎬</div>
+<div class="video-info">
+<div>Movie Trailer</div>
+<div class="lock">🔒 Watch Ad To Unlock</div>
+</div>
+</div>
+
+<div class="video-card">
+<div class="video-thumb">📚</div>
+<div class="video-info">
+<div>Education Video</div>
+<div class="lock">🔒 Watch Ad To Unlock</div>
+</div>
+</div>
+
+<div class="video-card">
+<div class="video-thumb">⚽</div>
+<div class="video-info">
+<div>Sports Highlight</div>
+<div class="lock">🔒 Watch Ad To Unlock</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<div class="title">👤 Profile</div>
+
+<div class="profile">
+<p>Username: @user</p>
+<p>Total Earnings: ৳120</p>
+<p>Ads Watched: 50</p>
+</div>
+</div>
+
+<div class="bottom-nav">
+<a href="#" class="nav-btn active">
+🏠<br>Home
+</a>
+
+<a href="#" class="nav-btn">
+🎥<br>Videos
+</a>
+
+<a href="#" class="nav-btn">
+📂<br>Category
+</a>
+
+<a href="#" class="nav-btn">
+👤<br>Profile
+</a>
+</div>
+
+</body>
+</html>
